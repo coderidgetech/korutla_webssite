@@ -20,7 +20,16 @@ Live site: **https://coderidgetech.github.io/korutla_webssite/** (after you enab
 2. **One-time:** GitHub repo → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions** (not “Deploy from a branch”).
 3. Wait for the workflow to finish (**Actions** tab). The site URL appears in the workflow summary and under Environments.
 
-If you rename the repo, update `base` in `vite.config.js` (`/korutla_webssite/` → `/new-repo-name/`).
+If you rename the repo, update `githubPagesBase` in `vite.config.js` to match (`/new-repo-name/`).
+
+### Vercel
+
+1. Go to **[vercel.com](https://vercel.com)** → sign in → **Add New…** → **Project**.
+2. **Import** [coderidgetech/korutla_webssite](https://github.com/coderidgetech/korutla_webssite) (install the GitHub app if asked).
+3. Leave defaults — **Framework Preset** can be Vite; **Build Command** `npm run build`, **Output** `dist`.
+4. **Deploy**. You get a URL like `https://korutla-webssite.vercel.app` (and optional custom domain in Project → **Domains**).
+
+Do **not** set `GITHUB_PAGES` on Vercel (build uses root `/` automatically).
 
 ## Run locally
 

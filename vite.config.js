@@ -1,8 +1,12 @@
 import { defineConfig } from 'vite';
 
-// GitHub Pages project URL: https://<user>.github.io/korutla_webssite/
-const repoBase = '/korutla_webssite/';
+// GitHub Pages project site needs repo subpath; Vercel/Netlify use root "/".
+const githubPagesBase = '/korutla_webssite/';
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? repoBase : '/',
-}));
+export default defineConfig(({ command }) => {
+  const usePagesBase =
+    command === 'build' && process.env.GITHUB_PAGES === 'true';
+  return {
+    base: usePagesBase ? githubPagesBase : '/',
+  };
+});
