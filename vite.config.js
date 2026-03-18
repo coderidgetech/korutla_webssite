@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-  base: './',
-});
+// GitHub Pages project URL: https://<user>.github.io/korutla_webssite/
+const repoBase = '/korutla_webssite/';
+
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? repoBase : '/',
+}));

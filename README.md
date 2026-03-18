@@ -12,6 +12,16 @@ npm run build
 Then **drag the `dist` folder** onto **[Netlify Drop](https://app.netlify.com/drop)** — you get a public URL in under a minute.  
 Full options: **`PUBLISH.md`**.
 
+### GitHub Pages (this repo)
+
+Live site: **https://coderidgetech.github.io/korutla_webssite/** (after you enable Pages below).
+
+1. Push to `main` — workflow **Deploy to GitHub Pages** builds and deploys automatically.
+2. **One-time:** GitHub repo → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions** (not “Deploy from a branch”).
+3. Wait for the workflow to finish (**Actions** tab). The site URL appears in the workflow summary and under Environments.
+
+If you rename the repo, update `base` in `vite.config.js` (`/korutla_webssite/` → `/new-repo-name/`).
+
 ## Run locally
 
 ```bash

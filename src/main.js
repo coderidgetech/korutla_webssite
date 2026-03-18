@@ -209,7 +209,9 @@ if (businessList) {
 const repList = document.getElementById('representatives-list');
 const repDisclaimer = document.getElementById('rep-disclaimer');
 if (repList) {
-  fetch('/data/representatives.json')
+  const repBase = import.meta.env.BASE_URL || '/';
+  const repDataUrl = (repBase.endsWith('/') ? repBase : `${repBase}/`) + 'data/representatives.json';
+  fetch(repDataUrl)
     .then((r) => r.json())
     .then((data) => {
       repList.setAttribute('aria-busy', 'false');
