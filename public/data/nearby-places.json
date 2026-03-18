@@ -1,0 +1,206 @@
+{
+  "disclaimer": "Distances are approximate by road from Korutla. Routes and times vary — check before travel.",
+  "inTown": [
+    {
+      "name": "Korutla Stepwell (Metla Baavi)",
+      "nameTe": "మెట్ల బావి / కోనేరు",
+      "note": "In Korutla",
+      "description": "11th-century stepped tank with early inscriptions; restored by the municipality."
+    },
+    {
+      "name": "Shree Mahadevaswamy Temple",
+      "nameTe": "శ్రీ మహాదేవస్వామి దేవాలయం",
+      "note": "In Korutla",
+      "description": "Ancient temple with Jain Tirthankara heritage; heart of the old town."
+    },
+    {
+      "name": "Medieval buruju towers",
+      "nameTe": "బురుజులు",
+      "note": "In Korutla",
+      "description": "Surviving watchtowers of the historic fortification."
+    },
+    {
+      "name": "Korutla Railway Station (KRLA)",
+      "nameTe": "KRLA రైల్వే స్టేషన్",
+      "note": "In Korutla",
+      "description": "Peddapalli–Nizamabad line — rail links to Jagtial, Nizamabad, Karimnagar side, and beyond."
+    }
+  ],
+  "nearby": [
+    {
+      "name": "Jagtial town & fort",
+      "nameTe": "జగిత్యాల కోట",
+      "approxKm": "23",
+      "description": "District HQ. Nizam-era star-shaped fort on the pond, busy markets and eateries.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jagtial+Fort+Telangana"
+    },
+    {
+      "name": "Metpally",
+      "nameTe": "మెట్‌పల్లి",
+      "approxKm": "28",
+      "description": "Major mandal town north-east of Korutla — markets, buses, and rural hub.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Metpally+Telangana"
+    },
+    {
+      "name": "Sri Anjaneya Swamy, Kondagattu",
+      "nameTe": "కొండగట్టు ఆంజనేయ స్వామి",
+      "approxKm": "40",
+      "description": "Famous hill temple; heavy pilgrimage traffic — plan early start via Jagtial.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kondagattu+Anjaneya+Swamy+Temple"
+    },
+    {
+      "name": "Peddapalli town & rail junction",
+      "nameTe": "పెద్దపల్లి",
+      "approxKm": "48",
+      "description": "Rail junction town; connects to Hyderabad, Kazipet, and coal-belt routes.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peddapalli+railway+station"
+    },
+    {
+      "name": "Sri Lakshmi Narasimha Swamy, Dharmapuri",
+      "nameTe": "ధర్మపురి లక్ష్మీ నరసింహ స్వామి",
+      "approxKm": "55",
+      "description": "Godavari-bank temple town; big utsavams in spring and winter.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dharmapuri+Lakshmi+Narasimha+Swamy+Temple"
+    },
+    {
+      "name": "Sri Raja Rajeshwara Swamy, Vemulawada",
+      "nameTe": "వేములవాడ రాజరాజేశ్వర స్వామి",
+      "approxKm": "60",
+      "description": "One of Telangana’s most visited Shiva kshetras; baths in holy tank, long weekends very crowded.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vemulawada+Rajarajeshwara+Swamy+Temple"
+    },
+    {
+      "name": "Kotilingala (Koteswara Swamy)",
+      "nameTe": "కోటిలింగాల కోటేశ్వర స్వామి",
+      "approxKm": "70",
+      "description": "Ancient Shiva temple on the Godavari belt; combine with Dharmapuri / Ramagundam circuit if time allows.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kotilingala+temple+Telangana"
+    },
+    {
+      "name": "Karimnagar city",
+      "nameTe": "కరీంనగర్",
+      "approxKm": "73",
+      "description": "Division HQ — hospitals, malls, Lower Manair Dam bund, and Elgandal fort nearby.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Karimnagar+Telangana"
+    },
+    {
+      "name": "Elgandal Fort, Karimnagar",
+      "nameTe": "ఎల్గండల్ కోట",
+      "approxKm": "75",
+      "description": "Hill fort on the Manair; sunset views. Same trip as Karimnagar city.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Elgandal+Fort+Karimnagar"
+    },
+    {
+      "name": "Lower Manair Dam (LMD) bund",
+      "nameTe": "లోయర్ మనైర్ డ్యాం",
+      "approxKm": "73",
+      "description": "Popular evening walk and reservoir views near Karimnagar.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Lower+Manair+Dam+Karimnagar"
+    },
+    {
+      "name": "Ujwala Park, Karimnagar",
+      "nameTe": "ఉజ్వల పార్క్",
+      "approxKm": "73",
+      "description": "Family park and boating in Karimnagar — easy add-on with city visit.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ujwala+Park+Karimnagar"
+    },
+    {
+      "name": "Nizamabad",
+      "nameTe": "నిజామాబాద్",
+      "approxKm": "76",
+      "description": "Larger city to the west; Nizamabad fort, railway, and links to Bodhan / Basar.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nizamabad+Telangana"
+    },
+    {
+      "name": "Sriram Sagar (SRSP) / Pochampad",
+      "nameTe": "శ్రీరామ్ సాగర్ · పోచంపాడ్",
+      "approxKm": "85",
+      "description": "Major Godavari reservoir; scenic drives and irrigation viewpoints (follow local access rules).",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sriram+Sagar+dam+Pochampad"
+    },
+    {
+      "name": "Armoor (Armur)",
+      "nameTe": "ఆర్మూర్",
+      "approxKm": "88",
+      "description": "Nizamabad district town known for chillies and markets; stop en route to Adilabad side.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Armoor+Telangana"
+    },
+    {
+      "name": "Ramagundam & Godavari belt",
+      "nameTe": "రామగుండం",
+      "approxKm": "95",
+      "description": "Industrial-coal belt town; Godavari scenery nearby; day trip for those interested in the region.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramagundam+Telangana"
+    },
+    {
+      "name": "Bodhan",
+      "nameTe": "బోధన్",
+      "approxKm": "100",
+      "description": "Historic town in Nizamabad district; sugar belt and old-town lanes.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bodhan+Telangana"
+    },
+    {
+      "name": "Mancherial",
+      "nameTe": "మంచిర్యాల",
+      "approxKm": "115",
+      "description": "Mancherial district HQ on the Hyderabad–Nagpur corridor; coal belt and Godavari-side trips.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Mancherial+Telangana"
+    },
+    {
+      "name": "Nirmal town & forts",
+      "nameTe": "నిర్మల్",
+      "approxKm": "125",
+      "description": "Famous for Nirmal toys and paintings; old fort sites and Adilabad-side waterfalls as longer loops.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Nirmal+Telangana"
+    },
+    {
+      "name": "Medak Cathedral & Medak Fort",
+      "nameTe": "మెదక్ చర్చి · కోట",
+      "approxKm": "130",
+      "description": "One of Asia’s largest church buildings; hill fort nearby — full day from Korutla.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Medak+Cathedral+Telangana"
+    },
+    {
+      "name": "Basar — Gnana Saraswathi Temple",
+      "nameTe": "బాసర ఞాన సరస్వతి దేవాలయం",
+      "approxKm": "135",
+      "description": "Major Saraswathi pilgrimage on Godavari; often paired with Nizamabad / Bodhan.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Basar+Saraswathi+Temple+Telangana"
+    },
+    {
+      "name": "Kaleshwaram (Kaleswara Mukteswara)",
+      "nameTe": "కాళేశ్వరం",
+      "approxKm": "145",
+      "description": "Sacred tri-shrine at Godavari; part of larger pilgrimage circuit (long day or overnight).",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kaleshwaram+temple+Telangana"
+    },
+    {
+      "name": "Kuntala waterfall",
+      "nameTe": "కుంటాల జలపాతం",
+      "approxKm": "155",
+      "description": "Monsoon-famous falls in Adilabad district; slippery paths — visit in season with care.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Kuntala+waterfall+Telangana"
+    },
+    {
+      "name": "Pochera waterfall",
+      "nameTe": "పోచెర జలపాతం",
+      "approxKm": "165",
+      "description": "Another Adilabad-region fall; combine planning with Kuntala / Nirmal circuit.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pochera+waterfall+Telangana"
+    },
+    {
+      "name": "Warangal / Hanamkonda (Thousand Pillar, Ramappa)",
+      "nameTe": "వరంగల్ · రామప్ప",
+      "approxKm": "220",
+      "description": "Kakatiya heritage — Thousand Pillar Temple, fort remnants; Ramappa UNESCO site needs separate leg south-east.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Thousand+Pillar+Temple+Warangal"
+    },
+    {
+      "name": "Hyderabad",
+      "nameTe": "హైదరాబాద్",
+      "approxKm": "235",
+      "description": "State capital — Charminar, museums, airport, and high-speed rail from Kazipet / Secunderabad side.",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hyderabad+Telangana"
+    }
+  ]
+}

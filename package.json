@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "publish:build": "npm run build && echo \"\\n✓ Ready. Upload the dist/ folder (see PUBLISH.md).\""
+    "publish:build": "npm run build && echo \"\\n✓ dist/ ready for deploy.\""
   },
   "devDependencies": {
     "vite": "^5.4.0"

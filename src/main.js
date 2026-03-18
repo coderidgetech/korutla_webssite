@@ -201,8 +201,7 @@ if (businessList) {
     })
     .catch(() => {
       businessList.setAttribute('aria-busy', 'false');
-      businessList.innerHTML =
-        '<p class="biz-load-err">Could not load <code>public/data/businesses.json</code>.</p>';
+      businessList.innerHTML = '<p class="biz-load-err">Directory unavailable. Try again later.</p>';
     });
 }
 
@@ -224,7 +223,7 @@ if (repList) {
           const name =
             row.name && String(row.name).trim()
               ? escapeHtml(row.name)
-              : '<span class="rep-name-placeholder">Add name in <code>representatives.json</code></span>';
+              : '<span class="rep-name-placeholder">—</span>';
           const party =
             row.party && String(row.party).trim()
               ? `<p class="rep-party">${escapeHtml(row.party)}</p>`
@@ -247,8 +246,65 @@ if (repList) {
     })
     .catch(() => {
       repList.setAttribute('aria-busy', 'false');
-      repList.innerHTML =
-        '<p class="biz-load-err">Could not load <code>public/data/representatives.json</code>.</p>';
+      repList.innerHTML = '<p class="biz-load-err">Could not load representatives.</p>';
+    });
+}
+
+const baseUrl = import.meta.env.BASE_URL || '/';
+const dataPrefix = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+
+const wardChipsWrap = document.getElementById('ward-chips-wrap');
+const wardsBlock = document.getElementById('wards-block');
+const wardsDisclaimerEl = document.getElementById('wards-disclaimer');
+if (wardChipsWrap && wardsBlock) {
+  fetch(`${dataPrefix}data/wards.json`)
+    .then((r) => r.json())
+    .then((data) => {
+      wardsBlock.setAttribute('aria-busy', 'false');
+      if (wardsDisclaimerEl) wardsDisclaimerEl.textContent = data.disclaimer || '';
+      const nums = (data.wards || []).map((w) => (typeof w === 'number' ? w : w.no)).filter((n) => n != null);
+      wardChipsWrap.innerHTML = nums.map((n) => `<span class="ward-chip">${escapeHtml(String(n))}</span>`).join('');
+    })
+    .catch(() => {
+      wardsBlock.setAttribute('aria-busy', 'false');
+      if (wardsDisclaimerEl) wardsDisclaimerEl.textContent = 'Ward list could not be loaded.';
+      wardChipsWrap.innerHTML = '';
+    });
+}
+
+const nearbyInTown = document.getElementById('nearby-in-town');
+const nearbyOut = document.getElementById('nearby-out');
+const nearbyDisclaimerEl = document.getElementById('nearby-disclaimer');
+const nearbyBlock = document.getElementById('nearby-block');
+if (nearbyInTown && nearbyOut && nearbyBlock) {
+  fetch(`${dataPrefix}data/nearby-places.json`)
+    .then((r) => r.json())
+    .then((data) => {
+      nearbyBlock.setAttribute('aria-busy', 'false');
+      if (nearbyDisclaimerEl) nearbyDisclaimerEl.textContent = data.disclaimer || '';
+      function card(p, showKm) {
+        const km =
+          showKm && p.approxKm
+            ? `<span class="nearby-km">~${escapeHtml(p.approxKm)} km</span>`
+            : `<span class="nearby-km nearby-km--local">${escapeHtml(p.note || '')}</span>`;
+        const link = p.mapsUrl
+          ? `<a href="${escapeAttr(p.mapsUrl)}" target="_blank" rel="noopener" class="nearby-maps">Maps</a>`
+          : '';
+        return `<article class="nearby-card">
+          <div class="nearby-card-top">${km}</div>
+          <h4 class="nearby-card-title">${escapeHtml(p.name)}</h4>
+          ${p.nameTe ? `<p class="nearby-card-te">${escapeHtml(p.nameTe)}</p>` : ''}
+          <p class="nearby-card-desc">${escapeHtml(p.description)}</p>
+          ${link ? `<p class="nearby-card-link">${link}</p>` : ''}
+        </article>`;
+      }
+      nearbyInTown.innerHTML = (data.inTown || []).map((p) => card(p, false)).join('');
+      nearbyOut.innerHTML = (data.nearby || []).map((p) => card(p, true)).join('');
+    })
+    .catch(() => {
+      nearbyBlock.setAttribute('aria-busy', 'false');
+      nearbyInTown.innerHTML = '';
+      nearbyOut.innerHTML = '<p class="biz-load-err">Could not load places to visit.</p>';
     });
 }
 
